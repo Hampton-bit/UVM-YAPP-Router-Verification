@@ -1,0 +1,54 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.h_b_if.hdata_w[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.h_b_if.hdata[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.h_b_if.hwr_rd}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.h_b_if.haddr[15:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.h_b_if.hen}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.c_n_r_if.clock}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.c_n_r_if.reset}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.in0.in_data[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.C0_if.data[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.C1_if.data[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.C2_if.data[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.dut.error}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_top.h_top.dut.in_suspend}]}
+	} ]]
+
+waveform xview limits 0 2000ps

@@ -1,0 +1,59 @@
+*** Message Type: info ***
+When: Sun Jun 29 01:54:41 PM PKT 2025
+SimVision started.
+Version: TOOL:  simvision(64)   23.09-s006
+User: cc
+Host: ncdc-0030
+Platform: Linux/x86_64/4.18.0-372.32.1.el8_6.x86_64
+Started: Sun Jun 29 01:54:41 PM PKT 2025
+Command: /home/cc/mnt/XCELIUM2309/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:ncdc-0030:52295 -64BIT -nocopyright
+Work Directory: /home/cc/Downloads/UVM/labs/NCDC_DV_Lab_40/Lab 40 files/task1_integ/tb
+ 
+*** Message Type: info ***
+When: Sun Jun 29 01:54:41 PM PKT 2025
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sun Jun 29 01:54:49 PM PKT 2025
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Sun Jun 29 01:54:54 PM PKT 2025
+Connect to Simulator
+      Design: worklib.tb_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       23.09-s006
+        User: cc
+        Host: ncdc-0030
+Time Started: Sun Jun 29 01:54:40 PM PKT 2025
+  Process ID: 94487
+   Directory: /home/cc/Downloads/UVM/labs/NCDC_DV_Lab_40/Lab 40 files/task1_integ/tb
+     Command: xrun -f file.f -access +rwc -uvm +SVSEED=random -gui
+
+ 
+*** Message Type: info ***
+When: Sun Jun 29 01:54:54 PM PKT 2025
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Sun Jun 29 01:55:06 PM PKT 2025
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Sun Jun 29 02:51:21 PM PKT 2025
+couldn't open "/home/cc/Downloads/UVM/labs/NCDC_DV_Lab_40/Lab 40 files/task1_integ/tb/.simvision/94620_cc_ncdc-0030_autosave.tcl.svcf": no such file or directory
+    while executing
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::savescript::autosave" line 1)
+    invoked from within
+"::savescript::autosave $filename"
+    (object "::application" method "::Application::auto-save" body line 18)
+    invoked from within
+"::application auto-save"
+    (in namespace inscope "::Application" script line 1)
+    invoked from within
+"namespace inscope ::Application {::application auto-save}"
+    ("after" script)
+ 

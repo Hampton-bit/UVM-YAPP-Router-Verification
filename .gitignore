@@ -1,0 +1,134 @@
+# Simulation outputs and logs
+*.log
+*.wlf
+*.vcd
+*.fsdb
+*.vpd
+*.shm/
+*.trn
+*.dsn
+*.bak
+*.orig
+*.rej
+*~
+*.tmp
+*.temp
+
+# Simulator specific files
+# Cadence
+*.history
+*.inter.vpd
+*.key
+*.log.*
+*.rc
+*.wdb
+INCA_libs/
+simv.daidir/
+csrc/
+*.daidir/
+cov_work/
+*.cov
+covhtmlreport/
+
+# Synopsys VCS
+*.daidir
+*.vpd
+*.vdb
+ucli.key
+inter.vpd
+DVEfiles/
+*.tcl.lock
+
+# Mentor Graphics
+*.mpf
+*.mti
+work/
+transcript
+vsim.wlf
+modelsim.ini
+
+# Xilinx Vivado/ISE
+*.jou
+*.str
+*.xpr
+vivado*.backup.jou
+vivado*.backup.log
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Build directories and compiled files
+build/
+obj/
+*.o
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+
+# Coverage files
+*.ucm
+*.ucdb
+cov_*/
+coverage/
+*.cov
+
+# Waveform files
+*.vcd
+*.ghw
+*.fst
+*.lxt
+*.lxt2
+*.vzt
+*.fst
+*.evcd
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python (if used for test scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Regression and test results
+regression_*/
+test_results/
+*.rpt
+*.sum
+*.xml
+
+# Lock files
+*.lock
+
+# Temporary files
+*~
+*.tmp
+*.bak
+*.orig
+*.rej
