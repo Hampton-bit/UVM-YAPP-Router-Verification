@@ -3,9 +3,8 @@
 
 A comprehensive Universal Verification Methodology (UVM) testbench for verifying a YAPP (Yet Another Packet Protocol) Router design. This project demonstrates integration of multiple UVCs (Universal Verification Components) including HBUS, Channel, Clock & Reset, and YAPP protocol verification environments.
 
-## Lab Objective
 
-The main objectives of this lab are:
+The main objectives werere:
 - To connect and configure the HBUS UVC, Clock and Reset UVC, and three output Channel UVCs
 - Demonstrate integration of multiple verification IP components
 - Validate packet routing functionality with comprehensive coverage
