@@ -1,5 +1,5 @@
 
-# UVM YAPP Router Verification - Lab 40: Integrating Multiple UVCs
+# UVM YAPP Router Verification - Integrating Multiple UVCs
 
 A comprehensive Universal Verification Methodology (UVM) testbench for verifying a YAPP (Yet Another Packet Protocol) Router design. This project demonstrates integration of multiple UVCs (Universal Verification Components) including HBUS, Channel, Clock & Reset, and YAPP protocol verification environments.
 
